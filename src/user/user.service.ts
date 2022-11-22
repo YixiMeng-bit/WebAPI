@@ -35,7 +35,7 @@ export class UserService {
         userPwd: 'p455w0rd',
       }),
     );
-    return 'This action adds a new user';
+    return 'This action adds a few new users';
   }
 
   findByName(username: string): Promise<User> {

@@ -4,5 +4,6 @@ export class CreateRestaurantDto {
   photoUrl: string;
   type: string;
   desc: string;
+  districtId: string;
   createUser: number;
 }

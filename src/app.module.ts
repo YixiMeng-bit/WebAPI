@@ -6,6 +6,7 @@ import { ReviewModule } from './review/review.module';
 import { RestaurantModule } from './restaurant/restaurant.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AuthModule } from './auth/auth.module';
+import { HttpModule } from '@nestjs/axios';
 
 @Module({
   imports: [
@@ -13,6 +14,7 @@ import { AuthModule } from './auth/auth.module';
     RestaurantModule,
     ReviewModule,
     AuthModule,
+    HttpModule,
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: 'localhost',

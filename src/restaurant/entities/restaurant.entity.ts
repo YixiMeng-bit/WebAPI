@@ -21,6 +21,8 @@ export class Restaurant {
   type: string;
   @Column({ type: 'longtext' })
   desc: string;
+  @Column({ name: 'district_id', type: 'varchar', length: 50 })
+  districtId: string;
   @Column({ name: 'create_user', type: 'int', nullable: false })
   createUser: number;
   @CreateDateColumn({ name: 'create_time', type: 'timestamp', nullable: false })
